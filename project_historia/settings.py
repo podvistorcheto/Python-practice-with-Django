@@ -124,3 +124,5 @@ STATIC_URL = '/static/'
 
 # to update the crispy forms css styles to boostrap4
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'blog-home'
