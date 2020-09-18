@@ -34,3 +34,19 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+    '''path('password-reset/', auth_views.PasswordResetView.as_view(
+        template_name='users/password_reset.html'), name='password_reset'
+        ),
+    path('password-reset/done/', auth_views.PasswordResetDoneView.as_view(
+        template_name='users/password_reset.html'), name='password_reset'
+        ),
+    path('password-reset-confirm/<uidb64>/<token>/', auth_views.PasswordConfirmView.as_view(
+        template_name='users/password_reset_confirm.html'), name='password_reset_confirm'
+        ),
+    path('password-reset/', auth_views.PasswordResetView.as_view(
+        template_name='users/password_reset.html'), name='password_reset'
+        ),
+    '''
+
